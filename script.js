@@ -12,26 +12,26 @@ function incrementPlayer(){
     player1.addEventListener("click", () => { 
        if( increment1 < input.value ){
             increment1++; 
-            if( increment1 === input.value ){
-                p1.classList.color = "green";
-            }
+           
+        } if( increment1 == input.value ){
+            p1.style.color = "red";
         }
-        
        p1.textContent = increment1;
     })
     player2.addEventListener("click", () => {
         if( increment2 < input.value ){
             increment2++;
+        } if( increment2 == input.value ){
+            p2.style.color = "red";
         }
-        if( increment2 === input.value ){
-            p2.style.color = "green";
-        }
+       
         p2.textContent = increment2;
+        
     })
     reset.addEventListener("click", () => { 
         p1.textContent = 0;
         p2.textContent = 0;
-        playingTo.textContent = 'x';
+        playingTo.textContent = 0;
     })
     input.addEventListener("blur", () => { 
         input.value;
