@@ -38,7 +38,7 @@ function incrementPlayer(){
         p2.textContent = 0;
         increment1 = 0;
         increment2 = 0;
-        playingTo.textContent = 5;
+        playingTo.textContent = 'infinite';
         winningScore = 5;
         gameOver = false;
         p1.style.color = "black";
