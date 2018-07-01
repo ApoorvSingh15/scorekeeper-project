@@ -10,7 +10,7 @@ function incrementPlayer(){
     var increment1 = 0;
     var increment2 = 0;
     var gameOver = false;
-    var winningScore = 5;
+    var winningScore = null;
 
 
     player1.addEventListener("click", () => { 
@@ -39,7 +39,7 @@ function incrementPlayer(){
         increment1 = 0;
         increment2 = 0;
         playingTo.textContent = 'infinite';
-        winningScore = 5;
+        winningScore = null;
         gameOver = false;
         p1.style.color = "black";
         p2.style.color = "black";
